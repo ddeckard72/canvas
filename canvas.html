@@ -22,6 +22,9 @@
 
 			var phrase = "Click or tap the screen to start the game";
 			c.font = 'bold 16px Arial, sans-serif' ;
+			//center text
+			var mt = c.measureText(phrase);
+			var xcoord = (canvas.width / 2) - (mt.width / 2);
 			c.fillStyle = '#FFFFFF';
 			c.fillText (phrase, 10, 30);
 		}
